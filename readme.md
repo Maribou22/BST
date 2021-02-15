@@ -15,6 +15,7 @@ The various lines have been tested and run with valgrind, and no memory leaks ha
 
 To design a solution I started thinking about what the components of a binary search tree are, and how you can traverse the key values in ascending order: I therefore started by implementing the structure of each node and the forward iterator to traverse them.
 The node is composed of the left and right unique pointers, the pair values and a raw pointer to the parent node; the custom constructors are implemented to be compatible with the insert function in case of an empty tree or not.
+
 The iterator is such that when dereferenced it returns the pair values, and when the ++ operator is called, it exploits the parent, left and right pointers of each node to traverse the tree in the right order. I then employed the iterator and the nodes structure to implement the member functions required.
 
 ### Member functions

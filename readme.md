@@ -3,9 +3,10 @@ The goal of the project was to implement a template binary search tree (BST) in 
 
 ## Compile and run the code
 
-To compile the source file "bst.cpp", type "make" from the command line in the directory "final_project".
+To compile the source file "bst.cpp", type "make" from the command line in this directory.
 This will compile the code with the following command: "c++ bst.cpp -o bst.x -Wall -Wextra -g -std=c++11".
 Therefore, in order to launch the program, type "./bst.x" from command line.
+
 The first part of the source file is the implementation of the bst data structure, hence the node structure, the member functions and the implementation of the forward iterator. In the main function, by defualt a BST will be initialized and printed; this BST has the same key values as the ones of the image provided on the assignment of the project (the values associated to the keys are chosen at random). Then there are multiple commented lines that can be uncommented to test the various member functions of the BST class.
 The various lines have been tested and run with valgrind, and no memory leaks had been found.
 
